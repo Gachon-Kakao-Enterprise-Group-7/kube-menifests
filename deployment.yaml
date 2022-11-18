@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: libertyform-spring
+  name: libertyform-spring
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: libertyform-spring
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: libertyform-spring
+    spec:
+      containers:
+      - name: libertyform-spring
+        image: {dockerhub}/libertyform-spring:{jenkins build number}
+        ports:
+          - containerPort: 8080
