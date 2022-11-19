@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: libertyform-spring
-        image: {dockerhub}/libertyform-spring:{jenkins build number}
+        image: {dockerhub}/libertyform-spring:33
         ports:
           - containerPort: 8080
