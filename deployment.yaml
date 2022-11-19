@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: libertyform-spring
-  name: libertyform-spring
+    app: k8s
+  name: k8s
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: libertyform-spring
+      app: k8s
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: libertyform-spring
+        app: k8s
     spec:
       containers:
-      - name: libertyform-spring
+      - name: k8s
         image: {dockerhub}/libertyform-spring:33
         ports:
           - containerPort: 8080
