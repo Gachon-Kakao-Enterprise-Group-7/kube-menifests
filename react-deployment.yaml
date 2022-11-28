@@ -20,4 +20,4 @@ spec:
       - name: libertyform-react
         image: forcetlight/libertyform-react:9
         ports:
-          - containerPort: 8080
+          - containerPort: 5000
