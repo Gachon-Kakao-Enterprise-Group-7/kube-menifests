@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: libertyform-spring
-        image: forcetlight/libertyform-spring:52
+        image: forcetlight/libertyform-spring:53
         ports:
           - containerPort: 8080
