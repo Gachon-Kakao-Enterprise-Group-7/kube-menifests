@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: libertyform-react
+  name: libertyform-reat
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: libertyform-react
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: libertyform-react
+    spec:
+      containers:
+      - name: libertyform-react
+        image: forcetlight/libertyform-react:84
+        ports:
+          - containerPort: 3000
