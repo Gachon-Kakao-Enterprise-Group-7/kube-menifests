@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: libertyform-flask
+  name: libertyform-flask
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: libertyform-flask
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: libertyform-flask
+    spec:
+      containers:
+      - name: libertyform-flask
+        image: dltkdguq77/python_server:latest
+        ports:
+          - containerPort: 5000
