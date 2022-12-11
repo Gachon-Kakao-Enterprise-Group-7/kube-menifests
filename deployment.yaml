@@ -20,4 +20,4 @@ spec:
       - name: libertyform-spring
         image: forcetlight/libertyform-spring:57
         ports:
-          - containerPort: 8080
+          - containerPort: 3000
