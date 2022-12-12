@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: libertyform-react
-        image: forcetlight/libertyform-react:152
+        image: forcetlight/libertyform-react:153
         ports:
           - containerPort: 3000
